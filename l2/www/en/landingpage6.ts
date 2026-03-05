@@ -11,6 +11,11 @@ export class Landingpage6102031 extends CollabPageElement {
     }
 
     setEvents() {
+        this.prepareEffects();
+        this.prepareClickLoginButton();    
+    }
+
+    prepareEffects() {
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -26,7 +31,21 @@ export class Landingpage6102031 extends CollabPageElement {
         }, observerOptions);
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    
+
+    }
+    prepareClickLoginButton() {
+        const btnLogin = document.querySelector('#btnLogin');
+        if (btnLogin) {
+            btnLogin.addEventListener('click', this._handleSignIn);
+        }
+    }
+
+    _handleSignIn() {
+        const params = {
+            type: 'iframeL7',
+            action: 'login'
+        };
+        window.parent.postMessage(params, '*');
     }
 }
 
