@@ -1,20 +1,18 @@
 /// <mls fileReference="_102031_/l2/www/en/landingpage.ts" enhancement="_102020_enhancementAura" />
 
-import { LitElement } from 'lit';
+import { CollabLandingPage } from '_102032_/l2/collabLandingPage'; 
 import { customElement } from 'lit/decorators.js';
 
 @customElement('www--en--landingpage-102031')
-export class Landingpage102031 extends LitElement {
-    createRenderRoot() {
-        return this;
-    }
-
+export class Landingpage102031 extends CollabLandingPage {
+    
     firstUpdated() {
         this.setEvents();
     }
 
     setEvents() {
         this.setScrollEffects();
+        this.setLoginEvent();
     }
 
     setScrollEffects() {
