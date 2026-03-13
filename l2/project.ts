@@ -5,6 +5,14 @@ export const projectConfig = {
         build: '',
         start: '',
         liveView: '',
+        preview: '/_102032_/l2/previewModeLandingPage.js',
+        title: 'Collab Codes',
+        meta: [
+            '<meta charset="UTF-8">',
+            '<meta name="description" content="Collab.codes - No-Code + Low-Code + Full-Code + Cross-Code.">',
+            '<meta name="keywords" content="desenv,lowcode,nocode,typescript">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+        ]
     },
     masterBackEnd: {
         build: '',

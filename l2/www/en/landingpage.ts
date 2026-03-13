@@ -140,14 +140,6 @@ function setEvents() {
     setLoginEvent();
 }
 
-function _handleSignIn() {
-    const params = {
-        type: 'iframeL7',
-        action: 'login'
-    };
-    window.parent.postMessage(params, '*');
-}
-
 function renderVideoSection(sectionVideos: SectionVideos): void {
     const container = document.getElementById('video-groups-container') as HTMLDivElement | null;
     const mainTitle = document.getElementById('video-main-title') as HTMLHeadingElement | null;
@@ -235,19 +227,15 @@ function setScrollEffects() {
 function setLoginEvent() {
 
     const buttons = document.querySelectorAll('.btn-login');
-
     buttons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.preventDefault();
-                //alert('Coming soon. Please check back shortly.');
-                
+                // alert('Coming soon. Please check back shortly.');
                 const params = {
                     type: 'iframeL7',
                     action: 'login'
                 };
                 window.parent.postMessage(params, '*');
-
-
 
         });
     });
