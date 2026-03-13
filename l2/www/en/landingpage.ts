@@ -1,6 +1,140 @@
 /// <mls fileReference="_102031_/l2/www/en/landingpage.ts" enhancement="_102032_/l2/enhancementLandingPage" />
 
 function setEvents() {
+    const sectionVideos: SectionVideos = {
+        title: "How It Works",
+        real_product: {
+            title: "Examples",
+            videos: [
+                {
+                    title: "PetShop",
+                    description: "A simple pet shop application"
+                },
+                {
+                    title: "TodoApp",
+                    description: "A simple todo application"
+                },
+                {
+                    title: "IndustryApp",
+                    description: "A simple industry application"
+                },
+                {
+                    title: "EcommerceApp",
+                    description: "A simple ecommerce application"
+                }
+            ]
+        },
+        customization: {
+            title: "Easy Customization",
+            videos: [
+                {
+                    title: "Support multiple languages",
+                    description: "Make the application ready for multiple languages and locales"
+                },
+                {
+                    title: "Theming",
+                    description: "Adapt themes and visual identity"
+                },
+                {
+                    title: "Layout",
+                    description: "Adapt the layout to different use cases and user preferences"
+                },
+                {
+                    title: "Text Editor",
+                    description: "Edit custom or AI-generated text with ease"
+                },
+                {
+                    title: "Custom Components",
+                    description: "Use or create custom components and swap them for alternative implementations"
+                }
+            ]
+        },
+        business_fit: {
+            title: "Adapted to Your Business",
+            videos: [
+                {
+                    title: "Business Rules",
+                    description: "Create business rules, conditions, and automated actions"
+                },
+                {
+                    title: "Expand with New Pages",
+                    description: "Add new pages and connect them to the application menu"
+                },
+                {
+                    title: "Access Control",
+                    description: "Control access, permissions, and protected areas of the application"
+                },
+                {
+                    title: "External Integrations",
+                    description: "Integrate the application with other systems and APIs"
+                }
+            ]
+        },
+        technical_architecture: {
+            title: "Technical Foundation",
+            videos: [
+                {
+                    title: "Interface Technology",
+                    description: "Inside the frontend architecture and technologies used"
+                },
+                {
+                    title: "Application Backend",
+                    description: "Inside the backend architecture and technologies used"
+                },
+                {
+                    title: "Data Layer",
+                    description: "Inside the data architecture and storage strategy"
+                },
+                {
+                    title: "DevOps",
+                    description: "Monitoring the live system, from errors to traffic and operational metrics"
+                }
+            ]
+        },
+        ai_collaboration: {
+            title: "AI Working With You",
+            videos: [
+                {
+                    title: "From Prompt to System",
+                    description: "Using an initial prompt, refining requirements, and building complete systems"
+                },
+                {
+                    title: "AI Customization",
+                    description: "How AI helps customize the application after generation"
+                },
+                {
+                    title: "AI Workflow",
+                    description: "How to use AI to manage your workflow and automate tasks"
+                },
+                {
+                    title: "AI in Automation",
+                    description: "Using AI to execute business commands and operational actions"
+                }
+            ]
+        },
+        performance: {
+            title: "Performance and Scalability",
+            videos: [
+                {
+                    title: "Performance by Design",
+                    description: "Designed for performance from the start"
+                },
+                {
+                    title: "Scaling the System",
+                    description: "Scaling the application to handle increasing load and data"
+                },
+                {
+                    title: "Observability",
+                    description: "Infrastructure and application monitoring in practice"
+                },
+                {
+                    title: "Runtime Footprint",
+                    description: "System resource usage and platform requirements in practice"
+                }
+            ]
+        }
+    };
+
     renderVideoSection(sectionVideos);
     setScrollEffects();
     setLoginEvent();
@@ -13,140 +147,6 @@ function _handleSignIn() {
     };
     window.parent.postMessage(params, '*');
 }
-
-const sectionVideos: SectionVideos = {
-    title: "How It Works",
-    real_product: {
-        title: "Examples",
-        videos: [
-            {
-                title: "PetShop",
-                description: "A simple pet shop application"
-            },
-            {
-                title: "TodoApp",
-                description: "A simple todo application"
-            },
-            {
-                title: "IndustryApp",
-                description: "A simple industry application"
-            },
-            {
-                title: "EcommerceApp",
-                description: "A simple ecommerce application"
-            }
-        ]
-    },
-    customization: {
-        title: "Easy Customization",
-        videos: [
-            {
-                title: "Support multiple languages",
-                description: "Make the application ready for multiple languages and locales"
-            },
-            {
-                title: "Theming",
-                description: "Adapt themes and visual identity"
-            },
-            {
-                title: "Layout",
-                description: "Adapt the layout to different use cases and user preferences"
-            },
-            {
-                title: "Text Editor",
-                description: "Edit custom or AI-generated text with ease"
-            },
-            {
-                title: "Custom Components",
-                description: "Use or create custom components and swap them for alternative implementations"
-            }
-        ]
-    },
-    business_fit: {
-        title: "Adapted to Your Business",
-        videos: [
-            {
-                title: "Business Rules",
-                description: "Create business rules, conditions, and automated actions"
-            },
-            {
-                title: "Expand with New Pages",
-                description: "Add new pages and connect them to the application menu"
-            },
-            {
-                title: "Access Control",
-                description: "Control access, permissions, and protected areas of the application"
-            },
-            {
-                title: "External Integrations",
-                description: "Integrate the application with other systems and APIs"
-            }
-        ]
-    },
-    technical_architecture: {
-        title: "Technical Foundation",
-        videos: [
-            {
-                title: "Interface Technology",
-                description: "Inside the frontend architecture and technologies used"
-            },
-            {
-                title: "Application Backend",
-                description: "Inside the backend architecture and technologies used"
-            },
-            {
-                title: "Data Layer",
-                description: "Inside the data architecture and storage strategy"
-            },
-            {
-                title: "DevOps",
-                description: "Monitoring the live system, from errors to traffic and operational metrics"
-            }
-        ]
-    },
-    ai_collaboration: {
-        title: "AI Working With You",
-        videos: [
-            {
-                title: "From Prompt to System",
-                description: "Using an initial prompt, refining requirements, and building complete systems"
-            },
-            {
-                title: "AI Customization",
-                description: "How AI helps customize the application after generation"
-            },
-            {
-                title: "AI Workflow",
-                description: "How to use AI to manage your workflow and automate tasks"
-            },
-            {
-                title: "AI in Automation",
-                description: "Using AI to execute business commands and operational actions"
-            }
-        ]
-    },
-    performance: {
-        title: "Performance and Scalability",
-        videos: [
-            {
-                title: "Performance by Design",
-                description: "Designed for performance from the start"
-            },
-            {
-                title: "Scaling the System",
-                description: "Scaling the application to handle increasing load and data"
-            },
-            {
-                title: "Observability",
-                description: "Infrastructure and application monitoring in practice"
-            },
-            {
-                title: "Runtime Footprint",
-                description: "System resource usage and platform requirements in practice"
-            }
-        ]
-    }
-};
 
 function renderVideoSection(sectionVideos: SectionVideos): void {
     const container = document.getElementById('video-groups-container') as HTMLDivElement | null;
@@ -527,5 +527,5 @@ interface VideoGroup {
 
 interface SectionVideos {
     title: string;
-    [key: string]: string | VideoGroup; 
+    [key: string]: string | VideoGroup;
 }
