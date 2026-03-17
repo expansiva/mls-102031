@@ -13,7 +13,9 @@ export const projectConfig = {
             '<meta charset="UTF-8">',
             '<meta name="description" content="Collab.codes - No-Code + Low-Code + Full-Code + Cross-Code.">',
             '<meta name="keywords" content="desenv,lowcode,nocode,typescript">',
-            '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '<link rel="preload" as="image" href="./assets/images/hero.avif" fetchpriority="high">',
+            '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">'
         ]
     },
     masterBackEnd: {
