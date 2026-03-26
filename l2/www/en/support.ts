@@ -1,7 +1,7 @@
 /// <mls fileReference="_102031_/l2/www/en/support.ts" enhancement="_102032_/l2/enhancementLandingPage" />
 
 
-class SupportPage {
+class SupportPage1 {
     constructor() {
         this.setEvents();
     }
@@ -30,4 +30,4 @@ class SupportPage {
     }
 }
 
-new SupportPage();
+new SupportPage1();
