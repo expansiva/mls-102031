@@ -1,7 +1,7 @@
 /// <mls fileReference="_102031_/l2/www/en/pricing.ts" enhancement="_102032_/l2/enhancementLandingPage" />
 
 
-class PricingPage1 {
+export class PricingPage1 {
     private isAnnual = false;
 
     constructor() {
