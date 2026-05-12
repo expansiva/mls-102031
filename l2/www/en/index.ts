@@ -1,5 +1,5 @@
 /// <mls fileReference="_102031_/l2/www/en/index.ts" enhancement="_102032_/l2/enhancementLandingPage" />
-class IndexPage {
+class IndexPage1 {
     constructor() { 
         this.setEvents();
     }
