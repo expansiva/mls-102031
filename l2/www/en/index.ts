@@ -307,7 +307,7 @@ class IndexPage1 {
     }
 }
 
-new IndexPage();
+new IndexPage1();
 
 
 interface Video {
